@@ -1,0 +1,121 @@
+venv
+models
+
+# Python virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Model files and training outputs
+models/
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+wandb/
+tensorboard_logs/
+mlruns/
+
+# Data files (uncomment if you have large datasets)
+# data/
+# *.csv
+# *.json
+# *.parquet
+# *.feather
+
+# Training and evaluation results
+results/
+outputs/
+logs/
+*.log
+
+# Environment variables and configuration
+.env
+.env.local
+.env.*.local
+config.ini
+secrets.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.project
+.pydevproject
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Coverage and testing
+.coverage
+.pytest_cache/
+.tox/
+.nox/
+.coverage.*
+htmlcov/
+.cache
+
+# Documentation builds
+docs/_build/
+.sphinx/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache/
+cover/
+
+# Rope project settings
+.ropeproject
+
+# Spyder project settings
+.spyderproject
+.spyproject
