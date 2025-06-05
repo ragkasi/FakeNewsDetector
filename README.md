@@ -2,13 +2,13 @@
 
 A machine learning project that classifies news articles as real or fake using both traditional NLP techniques and advanced transformer models.
 
-## 🎯 Project Overview
+## Project Overview
 
 This project implements multiple approaches to detect fake news:
 - **Traditional ML**: TF-IDF vectorization with Logistic Regression
 - **Deep Learning**: Fine-tuned BERT model for sequence classification
 
-## 📊 Performance Results
+## Performance Results
 
 ### TF-IDF + Logistic Regression Model
 - **Accuracy**: 98.62%
@@ -26,7 +26,7 @@ This project implements multiple approaches to detect fake news:
 weighted avg       0.99      0.99      0.99      8980
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 FakeNewsDetector/
@@ -37,13 +37,13 @@ FakeNewsDetector/
 ├── scripts/
 │   └── train.py
 ├── models/
-│   └── bert-fake-news/  (generated after training)
+│   └── bert-fake-news/  (created after training)
 ├── data/
 ├── app/
 └── venv/
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 ```bash
@@ -75,7 +75,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-## 📚 Dataset
+## Dataset
 
 The project uses the `mrm8488/fake-news` dataset from Hugging Face, which contains:
 - **Total articles**: ~45,000
@@ -85,7 +85,7 @@ The project uses the `mrm8488/fake-news` dataset from Hugging Face, which contai
   - 0: Real News
   - 1: Fake News
 
-## 🔧 Models Implemented
+## Models Implemented
 
 ### 1. TF-IDF + Logistic Regression
 - **Vectorizer**: TF-IDF with 5,000 max features, n-grams (1,2)
@@ -98,7 +98,7 @@ The project uses the `mrm8488/fake-news` dataset from Hugging Face, which contai
 - **Optimizer**: AdamW with learning rate 2e-5
 - **Batch Size**: 8 per device
 
-## 🛠️ Usage
+## Usage
 
 ### Running the Notebook
 1. Ensure your virtual environment is activated
@@ -114,7 +114,7 @@ python scripts/train.py
 
 The trained model will be saved to `models/bert-fake-news/`
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.8+
 - pandas
@@ -127,7 +127,7 @@ The trained model will be saved to `models/bert-fake-news/`
 - jupyter
 - ipywidgets
 
-## 🎯 Key Features
+## Key Features
 
 - **High Accuracy**: Achieves 98.6% accuracy on test set
 - **Multiple Approaches**: Compares traditional ML vs. transformer models
@@ -135,7 +135,7 @@ The trained model will be saved to `models/bert-fake-news/`
 - **Comprehensive Analysis**: Includes confusion matrix and detailed metrics
 - **Production Ready**: Trained models can be saved and deployed
 
-## 🔍 Model Analysis
+## Model Analysis
 
 The TF-IDF + Logistic Regression model shows excellent performance:
 - **Balanced Performance**: High precision and recall for both classes
@@ -143,7 +143,7 @@ The TF-IDF + Logistic Regression model shows excellent performance:
 - **Low False Negatives**: 99% recall for real news detection
 - **Robust**: Handles class imbalance well with balanced weights
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - [ ] Implement ensemble methods combining multiple models
 - [ ] Add cross-validation for more robust evaluation
@@ -152,11 +152,11 @@ The TF-IDF + Logistic Regression model shows excellent performance:
 - [ ] Add real-time news article classification
 - [ ] Implement explainability features (LIME, SHAP)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](../../issues).
 
-## 📧 Contact
+## Contact
 
 For questions or suggestions, please open an issue or contact the project maintainer.
 
