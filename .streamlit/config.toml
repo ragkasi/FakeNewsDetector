@@ -1,0 +1,23 @@
+[server]
+# Disable file watcher to prevent PyTorch compatibility issues
+fileWatcherType = "none"
+
+# Disable usage stats collection
+gatherUsageStats = false
+
+# Set headless mode for better performance
+headless = true
+
+# Disable CORS protection for local development
+enableCORS = false
+
+[browser]
+# Disable automatic browser opening
+gatherUsageStats = false
+
+[theme]
+# Optional: set a nice theme
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730" 
