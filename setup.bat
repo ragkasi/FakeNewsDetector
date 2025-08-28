@@ -1,0 +1,38 @@
+@echo off
+echo Setting up Fake News Detector...
+echo.
+
+echo Step 1: Creating virtual environment...
+python -m venv venv
+if errorlevel 1 (
+    echo Error: Failed to create virtual environment. Please ensure Python is installed.
+    pause
+    exit /b 1
+)
+
+echo Step 2: Activating virtual environment...
+call venv\Scripts\activate.bat
+
+echo Step 3: Upgrading pip...
+pip install --upgrade pip
+
+echo Step 4: Installing dependencies...
+echo This may take 5-10 minutes depending on your internet connection...
+pip install -r requirements.txt
+if errorlevel 1 (
+    echo Error: Failed to install dependencies. Please check your internet connection.
+    pause
+    exit /b 1
+)
+
+echo.
+echo Setup complete!
+echo.
+echo To start the application, run one of these commands:
+echo   streamlit run app/simple_modern_app.py    (Recommended for beginners)
+echo   streamlit run app/modern_app.py           (Advanced features)
+echo   streamlit run app/app.py                  (Original version)
+echo.
+echo The application will open in your web browser at http://localhost:8501
+echo.
+pause
